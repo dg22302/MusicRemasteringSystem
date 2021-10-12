@@ -1,1 +1,317 @@
-<h1>Hello World!</h1>
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>END-TO-END MUSIC REMASTERING SYSTEM</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="vendor/bootstrap/css/bootstrap.css" rel="stylesheet">
+
+    <!-- Custom fonts for this template -->
+    <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
+
+    <!-- Custom styles for this template -->
+    <link href="css/agency.min.css" rel="stylesheet">
+    <link href="css/agency.css" rel="stylesheet">
+
+  </head>
+
+  <body id="page-top">
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+      <div class="container">
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <!-- Menu -->
+          <i class="fas fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav text-uppercase ml-auto">
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#abstract">ABSTRACT</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#samples">Audio Samples</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#proposed">Proposed Method</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#result">Evaluation</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#result">Supplementary Materials</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+
+
+    <!-- Header -->
+    <header class="masthead">
+      <div class="container">
+        <div class="intro-text">
+          <div class="intro-lead-in">End-to-end</div>
+          <div class="intro-heading">Music Remastering System</div>
+          <div class="intro-lead-in">Using Self-supervised and Adversarial Training</div>
+        
+          <p><div style="position:center;"> <br><br>Junghyun Koo, Seungryeol Paik, and Kyogu Lee<br>Music and Audio Research Group (MARG), Seould National University </div></p>
+          <p><div style="position:center;"> <br><br>Paper: 
+            <!-- <a href="https://www.google.com" style="color:#4c4ce6"> google.com</a> </div></p> -->
+        </div>
+      </div>
+    </header>
+    
+
+
+    <!-- Abstract -->
+    <section id="abstract">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 text-center">
+            <h2 class="section-heading text-uppercase">ABSTRACT</h2>
+            <p><div style="text-align:justify"> Mastering is an essential step in music production, but it is also a challenging task that has to go through the hands of experienced audio engineers, where they adjust tone, space, and volume of a song. Remastering follows the same technical process, in which the context lies in mastering a song for the times. As these tasks have high entry barriers, we aim to lower the barriers by proposing an end-to-end music remastering system that transforms the mastering style of input audio to that of the target. The system is trained in a self-supervised manner, in which released pop songs were used for training. We also anticipated the model to generate realistic audio reflecting the reference's mastering style by applying a pre-trained encoder and a projection discriminator. We validate our results with quantitative metrics and a subjective listening test and show that the model generated samples of mastering style similar to the target. </div></p>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+
+
+    <!-- Samples -->
+    <section class="bg-light" id="samples">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 text-center">
+            <h2 class="section-heading text-uppercase">Audio Samples</h2>
+            <br>
+            <div class="nav nav-pills justify-content-center" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+              <a class="nav-link py-3 px-4 active" id="v-pills-2_5-tab" data-toggle="pill" href="#v-pills-2_5" role="tab" aria-controls="v-pills-2_5" aria-selected="true">Test Samples</a>
+              <a class="nav-link py-3 px-4" id="v-pills-7_5-tab" data-toggle="pill" href="#v-pills-7_5" role="tab" aria-controls="v-pills-7_5" aria-selected="false">Remastering with Old Records</a>
+              <a class="nav-link py-3 px-4" id="v-pills-12_5-tab" data-toggle="pill" href="#v-pills-12_5" role="tab" aria-controls="v-pills-12_5" aria-selected="false">Topic 3</a>
+            </div>
+            <div class="tab-content py-5" id="v-pills-tabContent">
+              <div class="tab-pane fade show active" id="v-pills-2_5" role="tabpanel" aria-labelledby="v-pills-2_5-tab">
+                <p><div style="text-align:justify"> Results of <b>Music Remastering</b> from the proposed model.
+                  <!-- <br> Four reverb presets were used in the validation dataset, where the details are as follows. -->
+                  <br> The samples in this section were generated using our test dataset and were also used in the listening test.
+                  <br> <p style="color:#93a1a1;"><i>Please use devices such as speakers, headphones, and earphones in a quiet environment to analyze the sound source. </i></p></div></p>
+                  <style type="text/css">
+                    .center{  margin-left: auto;margin-right: auto;}
+                    .tg  {border-collapse:collapse;border-color:#aabcfe;border-spacing:0;}
+                    .tg td{background-color:#e8edff;border-color:#aabcfe;border-style:solid;border-width:1px;color:#669;
+                      font-family:Arial, sans-serif;font-size:14px;overflow:hidden;padding:10px 5px;word-break:normal;}
+                    .tg th{background-color:#b9c9fe;border-color:#aabcfe;border-style:solid;border-width:1px;color:#039;
+                      font-family:Arial, sans-serif;font-size:14px;font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}
+                    .tg .tg-xl2c{background-color:#fe996b;border-color:#ffffff;font-family:Tahoma, Geneva, sans-serif !important;;font-size:18px;
+                      font-weight:bold;text-align:center;vertical-align:middle}
+                    .tg .tg-ak8n{background-color:#FFCE93;border-color:#ffffff;text-align:center;vertical-align:middle}
+                    .tg .tg-9z2j{border-color:#ffffff;font-family:Tahoma, Geneva, sans-serif !important;;font-size:15px;font-weight:bold;
+                      text-align:center;vertical-align:middle}
+                    .tg .tg-ib6t{background-color:#dae8fc;border-color:#ffffff;font-family:Tahoma, Geneva, sans-serif !important;;font-size:15px;
+                      font-weight:bold;text-align:center;vertical-align:middle}
+                    .tg .tg-ffhn{background-color:#DAE8FC;border-color:#ffffff;color:#003399;font-size:18px;font-weight:bold;text-align:center;
+                      vertical-align:middle}
+                    .tg .tg-onod{background-color:#DAE8FC;border-color:#ffffff;color:#003399;font-weight:bold;text-align:center;vertical-align:middle}
+                    .tg .tg-9371{border-color:#ffffff;font-family:Tahoma, Geneva, sans-serif !important;;text-align:center;vertical-align:middle}
+                    .tg .tg-vhvi{border-color:#ffffff;font-family:Tahoma, Geneva, sans-serif !important;;font-size:16px;font-weight:bold;
+                      text-align:center;vertical-align:middle}
+                    .tg .tg-vhvy{border-color:#ffffff;font-family:Tahoma, Geneva, sans-serif !important;;font-size:18px;font-weight:bold;
+                      text-align:center;vertical-align:middle}
+                    .tg .tg-2uj8{background-color:#ffce93;border-color:#ffffff;font-family:Tahoma, Geneva, sans-serif !important;;text-align:center;
+                      vertical-align:middle}
+                    .tg .tg-8ye5{background-color:#9b9b9b;border-color:#ffffff;font-size:18px;font-weight:bold;text-align:center;vertical-align:middle}
+                    .tg .tg-suyw{border-color:#ffffff;color:#003399;font-family:Tahoma, Geneva, sans-serif !important;;font-weight:bold;
+                      text-align:center;vertical-align:middle}
+                    .tg .tg-0qc6{border-color:#ffffff;color:#003399;font-family:Tahoma, Geneva, sans-serif !important;;font-size:18px;font-weight:bold;
+                      text-align:center;vertical-align:middle}
+                    .tg .tg-xw6d{background-color:#e8edff;border-color:#ffffff;text-align:center;vertical-align:middle}
+                    .tg .tg-auma{background-color:#e8edff;border-color:#ffffff;font-family:Tahoma, Geneva, sans-serif !important;;text-align:center;
+                      vertical-align:middle}
+                    .tg .tg-1mpp{background-color:#dae8fc;border-color:#ffffff;font-family:Tahoma, Geneva, sans-serif !important;;text-align:center;
+                      vertical-align:middle}
+                    .tg .tg-iz5c{background-color:#dae8fc;border-color:#ffffff;color:#003399;font-family:Tahoma, Geneva, sans-serif !important;;
+                      font-weight:bold;text-align:center;vertical-align:middle}
+                    .tg .tg-5p9e{background-color:#dae8fc;border-color:#ffffff;color:#003399;font-family:Tahoma, Geneva, sans-serif !important;;
+                      font-size:18px;font-weight:bold;text-align:center;vertical-align:middle}
+                    .tg .tg-hvao{background-color:#c0c0c0;border-color:#ffffff;text-align:center;vertical-align:middle}
+                    .tg .tg-jjo6{background-color:#DAE8FC;border-color:#ffffff;font-size:15px;font-weight:bold;text-align:center;vertical-align:middle}
+                    .tg .tg-f1vc{background-color:#DAE8FC;border-color:#ffffff;text-align:center;vertical-align:middle}
+                    </style>
+                    <table class="tg center">
+                    <thead>
+                      <tr>
+                        <th class="tg-vhvi">Sample Index</th>
+                        <th class="tg-vhvy">Reference Track</th>
+                        <th class="tg-vhvy"></th>
+                        <th class="tg-vhvy">Network Input</th>
+                        <th class="tg-vhvy"></th>
+                        <th class="tg-vhvy">Network Output</th>
+                        <th class="tg-8ye5">Random Manipulation</th>
+                        <th class="tg-xl2c">Ground Truth</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td class="tg-9z2j">#1</td>
+                        <td class="tg-9371"><audio controls style="width:200px;"><source src="audio/listening_test_samples/4/wav/in_b2.wav" type="audio/wav"></audio></td>
+                        <td class="tg-suyw">+</td>
+                        <td class="tg-9371"><audio controls style="width:200px;"><source src="audio/listening_test_samples/4/wav/in_a1.wav" type="audio/wav"></audio></td>
+                        <td class="tg-0qc6">→</td>
+                        <td class="tg-9371"><audio controls style="width:200px;"><source src="audio/listening_test_samples/4/wav/out_a2.wav" type="audio/wav"></audio></td>
+                        <td class="tg-9371"><audio controls style="width:200px;"><source src="audio/listening_test_samples/4/wav/rand.wav" type="audio/wav"></audio></td>
+                        <td class="tg-9371"><audio controls style="width:200px;"><source src="audio/listening_test_samples/4/wav/gt_a2.wav" type="audio/wav"></audio></td>
+                      </tr>
+                      <tr>
+                        <td class="tg-ib6t">#2</td>
+                        <td class="tg-1mpp"><audio controls style="width:200px;"><source src="audio/listening_test_samples/3/wav/in_b2.wav" type="audio/wav"></td>
+                        <td class="tg-iz5c">+</td>
+                        <td class="tg-1mpp"><audio controls style="width:200px;"><source src="audio/listening_test_samples/3/wav/in_a1.wav" type="audio/wav"></td>
+                        <td class="tg-5p9e">→</td>
+                        <td class="tg-1mpp"><audio controls style="width:200px;"><source src="audio/listening_test_samples/3/wav/out_a2.wav" type="audio/wav"></td>
+                        <td class="tg-hvao"><audio controls style="width:200px;"><source src="audio/listening_test_samples/3/wav/rand.wav" type="audio/wav"></td>
+                        <td class="tg-2uj8"><audio controls style="width:200px;"><source src="audio/listening_test_samples/3/wav/gt_a2.wav" type="audio/wav"></td>
+                      </tr>
+                      <tr>
+                        <td class="tg-9z2j">#3</td>
+                        <td class="tg-9371"><audio controls style="width:200px;"><source src="audio/listening_test_samples/9/wav/in_b2.wav" type="audio/wav"></audio></td>
+                        <td class="tg-suyw">+</td>
+                        <td class="tg-9371"><audio controls style="width:200px;"><source src="audio/listening_test_samples/9/wav/in_a1.wav" type="audio/wav"></audio></td>
+                        <td class="tg-0qc6">→</td>
+                        <td class="tg-9371"><audio controls style="width:200px;"><source src="audio/listening_test_samples/9/wav/out_a2.wav" type="audio/wav"></audio></td>
+                        <td class="tg-9371"><audio controls style="width:200px;"><source src="audio/listening_test_samples/9/wav/rand.wav" type="audio/wav"></audio></td>
+                        <td class="tg-9371"><audio controls style="width:200px;"><source src="audio/listening_test_samples/9/wav/gt_a2.wav" type="audio/wav"></audio></td>
+                      </tr>
+                      <tr>
+                        <td class="tg-ib6t">#4</td>
+                        <td class="tg-1mpp"><audio controls style="width:200px;"><source src="audio/listening_test_samples/7/wav/in_b2.wav" type="audio/wav"></td>
+                        <td class="tg-iz5c">+</td>
+                        <td class="tg-1mpp"><audio controls style="width:200px;"><source src="audio/listening_test_samples/7/wav/in_a1.wav" type="audio/wav"></td>
+                        <td class="tg-5p9e">→</td>
+                        <td class="tg-1mpp"><audio controls style="width:200px;"><source src="audio/listening_test_samples/7/wav/out_a2.wav" type="audio/wav"></td>
+                        <td class="tg-hvao"><audio controls style="width:200px;"><source src="audio/listening_test_samples/7/wav/rand.wav" type="audio/wav"></td>
+                        <td class="tg-2uj8"><audio controls style="width:200px;"><source src="audio/listening_test_samples/7/wav/gt_a2.wav" type="audio/wav"></td>
+                      </tr>
+                      <tr>
+                        <td class="tg-9z2j">#5</td>
+                        <td class="tg-9371"><audio controls style="width:200px;"><source src="audio/listening_test_samples/10/wav/in_b2.wav" type="audio/wav"></audio></td>
+                        <td class="tg-suyw">+</td>
+                        <td class="tg-9371"><audio controls style="width:200px;"><source src="audio/listening_test_samples/10/wav/in_a1.wav" type="audio/wav"></audio></td>
+                        <td class="tg-0qc6">→</td>
+                        <td class="tg-9371"><audio controls style="width:200px;"><source src="audio/listening_test_samples/10/wav/out_a2.wav" type="audio/wav"></audio></td>
+                        <td class="tg-9371"><audio controls style="width:200px;"><source src="audio/listening_test_samples/10/wav/rand.wav" type="audio/wav"></audio></td>
+                        <td class="tg-9371"><audio controls style="width:200px;"><source src="audio/listening_test_samples/10/wav/gt_a2.wav" type="audio/wav"></audio></td>
+                      </tr>
+                      <tr>
+                        <td class="tg-jjo6">#6</td>
+                        <td class="tg-1mpp"><audio controls style="width:200px;"><source src="audio/listening_test_samples/12/wav/in_b2.wav" type="audio/wav"></td>
+                        <td class="tg-iz5c">+</td>
+                        <td class="tg-1mpp"><audio controls style="width:200px;"><source src="audio/listening_test_samples/12/wav/in_a1.wav" type="audio/wav"></td>
+                        <td class="tg-5p9e">→</td>
+                        <td class="tg-1mpp"><audio controls style="width:200px;"><source src="audio/listening_test_samples/12/wav/out_a2.wav" type="audio/wav"></td>
+                        <td class="tg-hvao"><audio controls style="width:200px;"><source src="audio/listening_test_samples/12/wav/rand.wav" type="audio/wav"></td>
+                        <td class="tg-2uj8"><audio controls style="width:200px;"><source src="audio/listening_test_samples/12/wav/gt_a2.wav" type="audio/wav"></td>
+                      </tr>
+                    </tbody>
+                    </table>
+              </div>
+
+              <div class="tab-pane fade center" id="v-pills-7_5" role="tabpanel" aria-labelledby="v-pills-7_5-tab">
+                <p><div style="text-align:justify"> <b>Music Remastering</b> with old recordings. The source track is remastered with the reference's mastering style. </div></p>
+              </div>
+
+
+              <div class="tab-pane fade" id="v-pills-12_5" role="tabpanel" aria-labelledby="v-pills-12_5-tab">
+                <!-- <p><div style="text-align:justify"> <b>Reverb Conversion</b> with pop songs and raw tracks. Reference track (a pop song) is de-reverberated, while the raw track is added with the reverb factor of the reference track. <br> <p style="color:#93a1a1;"><i>Please use devices such as speakers, headphones, and earphones in a quiet environment to analyze the sound source. </i></p></div></p> -->
+                <br>
+              </div>
+            </div>
+            <div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    
+    <!-- proposed method -->
+    <section class="bg-light" id="proposed">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 text-center">
+            <h2 class="section-heading text-uppercase">PROPOSED METHOD</h2>
+            <img src="img/architecture.png" style="max-width: 100%; height: auto;" />
+            <p><div style="text-align:justify"> The Mastering Cloner aims to convert the mastering effects of the input track A1 to that of the reference track B2 by conditioning the encoded feature of the reference track 2' extracted from the pre-trained Music Effects Encoder. For this procedure, tracks A and B applied with the same mastering manipulation are used as a ground truth A2 and reference track B2, where A1 is another manipulated sample and used as the input of the Mastering Cloner. The discriminator is applied with the expectation of generating realistic sounds and similar mastering effects to the projected track. </div></p>
+          </div>
+        </div>
+      </div>
+    </section>
+   
+    
+
+    <!-- Result -->
+    <!-- <section id="result">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 text-center">
+            <h2 class="section-heading text-uppercase">Evaluation</h2>
+            <p><div style="text-align:justify"> The <b>quantitative evaluation</b> includes two tasks;<br>
+              &emsp;&emsp;<i>Reverb Conversion</i>: interchanging reverb of two different inputs.
+              We evaluate our metrics with a comparison between target reverberated and interchanged samples.
+              A higher value represents a better result in all the metrics used. <br>
+              </h3>
+            </div></p>
+            <img src="img/reverb_conversion.png" style="max-width: 720px; height: auto;" />
+            <br><br><br>
+            <p><div style="text-align:justify"> &emsp;&emsp;<i>De-reverberation</i>: eliminating reverb of the target input.
+                        Values of the x-axis below are the percentage of bus send ratio (γ) set for mixing source and reverb factor. The unit for STOI is percent(%), and SRMR and SI-SDR are in decibel (dB).
+                        A higher value represents a better result in all the metrics used.</div></p>
+            <img src="img/dereverberation.png" style="max-width: 100%; height: auto;" />
+
+            <p><div style="text-align:justify"> <br><br><br> The <b>listening test</b> was conducted with twenty participants. 
+                    The participants were randomly given one of two different test sets with twenty-four questions each. 
+                    For each question, three samples are presented - a reference sample, which is the output of the proposed model, with two different samples, which are an input of the model and ground truth of the reference sample (GT).<br>
+            </div></p>
+            <p><div style="text-align:center">
+            <img src="img/qualitative.png" style="max-width: 460px; height: auto;"/>
+            <br><br><br>
+            <p><div style="text-align:justify"> Below are visual examples of W→D and D→W samples.
+            </div></p>
+            <img src="img/WD.png" style="max-width: 100%; height: auto;" />
+            <br><br><br>
+            <img src="img/DW.png" style="max-width: 100%; height: auto;" />
+
+          </div>
+        </div>
+      </div>
+    </section> -->
+   
+    
+
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+    <!-- Custom scripts for this template -->
+    <script src="js/agency.min.js"></script>
+
+  </body>
+
+</html>
